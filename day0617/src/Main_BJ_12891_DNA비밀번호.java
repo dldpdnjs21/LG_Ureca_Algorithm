@@ -46,6 +46,7 @@ public class Main_BJ_12891_DNA비밀번호 {
 		
 	}//main
 	
+	
 	static boolean check(Map<Character, Integer> map) {
 		
 		for(Character key : map.keySet()) {
