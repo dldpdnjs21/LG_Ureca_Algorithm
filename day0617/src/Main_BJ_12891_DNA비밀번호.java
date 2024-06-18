@@ -13,14 +13,14 @@ public class Main_BJ_12891_DNA비밀번호 {
 		//DNA문자열 ==> 'A', 'C', 'G', 'T' 문자로만 구성된 문자열
 
 //		System.setIn(InputStream in);
-		System.setIn(new FileInputStream("input.txt"));
+//		System.setIn(new FileInputStream("input.txt"));
 		Scanner sc = new Scanner(System.in);
 		int strLength = sc.nextInt(); //DNA문자열 길이
 		int	subStrLength = sc.nextInt(); //비밀번호롤 사용할 부분문자열 길이
 		int answer = 0;
 		
 		String DNAStr = sc.next(); //"CCTGGATTG" DNA문자열
-		minOccurs = new int[4]; //'A', 'C', 'G', 'T'의 최소 출현횟수 저장
+		minOccurs = new int[4]; //'A', 'C', 'G', 	'T'의 최소 출현횟수 저장
 		
 //		for(int i=0; i<minOccurs.length; i++) {
 		for(int i=0 ; i<4; i++){
@@ -43,6 +43,7 @@ public class Main_BJ_12891_DNA비밀번호 {
 		}
 		
 		//우측으로 한칸씩 (같은 너비를 유지한 채) 윈도우 이동
+		
 		//=> 왼쪽 첫번째는 빼기, 오른쪽 새로 들어오는 정보는 더하기
 		//=> 슬라이딩 위도우는 너비가 클수록 연산의 횟수를 많이 줄여 줄 수 있음
 		
