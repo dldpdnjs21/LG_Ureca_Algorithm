@@ -1,0 +1,36 @@
+<중첩클래스(내부클래스)> 포함,Nested 
+- 클래스내에 또 다른 클래스를 구성하는 것.
+
+종류)
+  정적 중첩클래스 - static이 선언된 내부클래스
+                          외부의 자원을 사용할 때 static붙는 인스턴스만 접근가능.
+  
+  비정적 중첩클래스 - static이 선언되지 않은 내부클래스
+                            inner클래스!!
+               
+ class A{//외부클래스, Outer클래스, Top-level클래스
+     //1차 자원 정의
+    
+     int i=11;
+     
+     void hello(){
+         print(); (X)
+         
+     }
+    
+     class B{//내부클래스, Inner클래스
+     //2차 자원 정의
+        void callTest(){
+           hello();  (O)
+        }
+        
+        void print(){
+        
+        }     
+     }//B class  
+ }//A class    
+ 
+ ----> 컴파일  -----> A.class   A$B.class 
+
+
+
