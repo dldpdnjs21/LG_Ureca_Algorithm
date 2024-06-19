@@ -43,7 +43,8 @@ tokens = new StringTokenizer(str); //두번째 인자값 구분자를 생략하�
 	  //입력되는 스위치 정보가 1부터 사용되기 때문에  
 	  // ==> 배열의 0번지를 버림으로써  입력값과 배열번지를 일치시켜준다!!
       
-	  StringTokenizer tokens = new StringTokenizer(br.readLine()," ");//"0 1 0 1 0 0 0 1"
+	  StringTokenizer tokens
+	  = new StringTokenizer(br.readLine()," ");//"0 1 0 1 0 0 0 1"
       for (int i = 1; i <= N; i++) {
 		  switchArry[i] = Integer.parseInt(tokens.nextToken()); //스위치정보 입력	
 	  }
