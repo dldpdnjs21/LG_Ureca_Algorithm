@@ -20,7 +20,7 @@ public class Main_BJ_12891_DNA비밀번호 {
 		int answer = 0;
 		
 		String DNAStr = sc.next(); //"CCTGGATTG" DNA문자열
-		minOccurs = new int[4]; //'A', 'C', 'G', 	'T'의 최소 출현횟수 저장
+		minOccurs = new int[4]; //'A', 'C', 'G', 'T'의 최소 출현횟수 저장
 		
 //		for(int i=0; i<minOccurs.length; i++) {
 		for(int i=0 ; i<4; i++){
