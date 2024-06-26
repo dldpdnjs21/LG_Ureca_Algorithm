@@ -27,6 +27,12 @@ public class AdjMatrixSearchTest {
 		System.out.println("======bfs2(너비우선탐색2)======");
 		bfs2();
 		
+		System.out.println("======dfs(깊이우선탐색)======");
+//		boolean visited[] = new boolean[N];
+//		dfs(0,visited); //시작정점, 방문배열
+		
+		dfs(0,new boolean[N]); //시작정점, 방문배열
+		
 		sc.close();
 	}//main
 	
@@ -97,4 +103,16 @@ public class AdjMatrixSearchTest {
 		}//while
 		
 	}//bfs2
+	
+	private static void dfs(int current, boolean[] visited) {
+		visited[current] = true;
+		System.out.println((char)(current+65));
+		
+		for(int i=0; i<N; i++) {
+			if(adjMatrix[current][i] && !visited[i]) {
+				dfs(i,visited);
+			}	
+		}
+	}//dfs
+	
 }//end class
