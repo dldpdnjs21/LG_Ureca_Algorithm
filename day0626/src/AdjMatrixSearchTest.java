@@ -8,7 +8,7 @@ public class AdjMatrixSearchTest {
 	static boolean adjMatrix[][];
 	
 	public static void main(String[] args) throws Exception {
-		System.setIn(new FileInputStream("input2.txt"));
+//		System.setIn(new FileInputStream("input2.txt"));
 		Scanner sc = new Scanner(System.in);
 		N = sc.nextInt();//정점수
 		int C = sc.nextInt();//간선수
@@ -56,6 +56,7 @@ public class AdjMatrixSearchTest {
 				System.out.println("이미 처리된 정점입니다");
 				continue;
 			}
+			
 			
 			//4.방문처리
 			visited[current] = true;//방문(처리)된 것을 체크
